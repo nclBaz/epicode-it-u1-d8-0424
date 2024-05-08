@@ -47,4 +47,4 @@ let counter4 = 10
 do {
   console.log("Il valore corrente é: ", counter4)
   counter4++
-} while (counter4 < 1000)
+} while (counter4 < 0)

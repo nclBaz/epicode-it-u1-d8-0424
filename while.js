@@ -3,7 +3,7 @@
 // Il ciclo WHILE è uno dei cicli tradizionali più famosi ed utilizzati.
 // E' estremamente utile in tutti i casi in cui vogliamo ripetere delle istruzioni un numero NON PRECISATO DI VOLTE
 
-console.log("-------------------------- CICLO INCCREMENTANTE --------------------------")
+console.log("-------------------------- CICLO INCREMENTANTE --------------------------")
 let counter = 90 // Numero dal quale partire
 
 while (counter < 100) {
@@ -27,3 +27,24 @@ while (counter2 > 0) {
   counter2 = counter2 - 2
   // counter--
 }
+
+console.log("------------------------ CICLO CON NUMERO RANDOM DI RIPETIZIONI ------------------------")
+
+let counter3 = 0
+
+while (counter3 < 5) {
+  const increment = Math.random() // Genera un numero random tra 0 e 1
+  console.log("Il valore corrente é: ", counter3)
+  counter3 = counter3 + increment
+}
+
+console.log("-------------------------- DO WHILE --------------------------")
+
+// Il DO-WHILE è una variante del while in cui la condizione invece di essere valutata immediatamente, verrà valutata alla fine dell'iterazione. Ciò significa che sicuramente almeno una volta il codice verrà eseguito, a differenza del while in cui se la condizione è falsa non eseguiremo niente
+
+let counter4 = 10
+
+do {
+  console.log("Il valore corrente é: ", counter4)
+  counter4++
+} while (counter4 < 1000)
